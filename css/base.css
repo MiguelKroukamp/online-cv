@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive; }
+
+nav {
+  background: inherit; }
+  nav ul {
+    background: #fff0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    color: white;
+    display: inline-block;
+    padding: 18px 16px;
+    text-decoration: none; }
+  nav a:hover {
+    background: white;
+    color: red; }
+  nav img {
+    position: absolute;
+    height: 100px;
+    width: 100px; }
+  nav #aboutList {
+    position: absolute;
+    display: block;
+    padding: 12px 16px; }
+  nav #about-me:hover #aboutList {
+    color: red;
+    display: inline-block; }
+
+#btn {
+  border: 3px white solid;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  width: 10;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px; }
+
+#btn:hover {
+  border: 3px gray solid;
+  background: white;
+  color: red; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41; }
+
+header {
+  background: url(../img/1294016590_preview_6_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 100vh;
+  position: justify;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  font-family: 'Press Start 2P', cursive; }
+  header p {
+    font-size: 2em; }
+  header span {
+    display: block;
+    margin: 0 auto;
+    font-size: 3em; }
+  header #gif {
+    display: none; }
+
+.about-me {
+  height: 50vh;
+  position: justify;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  font-family: 'Press Start 2P', cursive;
+  padding: 0 50px 0 50px;
+  text-shadow: 2px 2px 2px black; }
+  .about-me div {
+    display: block; }
+
+article {
+  background: url(../img/WJdjwW7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  z-index: 100;
+  text-align: center;
+  /* The actual timeline (the vertical ruler) */ }
+  article h2 {
+    font-size: 2em;
+    background-color: white;
+    padding: 10px;
+    color: black; }
+  article .grid-item {
+    text-align: right;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    position: relative;
+    border-radius: 6px; }
+    article .grid-item div {
+      padding: 20px; }
+  article .grid-item2 {
+    text-align: left;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    position: relative;
+    border-radius: 6px; }
+    article .grid-item2 div {
+      padding: 20px; }
+  article .grid-item3 {
+    text-align: right;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    position: relative;
+    border-radius: 6px; }
+    article .grid-item3 div {
+      padding: 20px; }
+  article .grid-item4 {
+    text-align: left;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    position: relative;
+    border-radius: 6px; }
+    article .grid-item4 div {
+      padding: 20px; }
+  article .grid-item5 {
+    text-align: right;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    position: relative;
+    border-radius: 6px; }
+    article .grid-item5 div {
+      padding: 20px; }
+  article .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1em; }
+  article .container {
+    position: relative;
+    margin: 0 auto; }
+  article .container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px; }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Press Start 2P', cursive; }
+
+input[type=submit] {
+  border: 3px white solid;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  width: 10;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px; }
+
+input[type=submit]:hover {
+  border: 3px gray solid;
+  background: white;
+  color: red; }
+
+.contactForm {
+  border-radius: 5px;
+  background: url(../img/b3.png);
+  padding: 20px;
+  color: white; }
+
+/*# sourceMappingURL=base.css.map */
