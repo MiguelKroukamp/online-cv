@@ -13,3 +13,7 @@ document.getElementById("btn").onclick=function changText()
     var audio = document.getElementById("audio");
     audio.play();
 }
+
+if($("parallax").css("display") == "none"){
+    $.parallax({...});
+}
