@@ -61,6 +61,9 @@
         justify-content: center;
         text-align: center;
         padding: 0 50px 0 50px;
+        p {
+            font-size: 0.7em
+        }
         div {
             display: block;
         }
@@ -137,6 +140,7 @@
     .container {
         display: grid;
         grid-template-columns: auto;
+        font-size: 0.7em;
     }
     // .container {
     //     position: relative;

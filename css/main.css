@@ -441,6 +441,8 @@ article {
     justify-content: center;
     text-align: center;
     padding: 0 50px 0 50px; }
+    .about-me p {
+      font-size: 0.7em; }
     .about-me div {
       display: block; }
 
@@ -501,7 +503,8 @@ article {
         padding: 20px; }
     article .container {
       display: grid;
-      grid-template-columns: auto; }
+      grid-template-columns: auto;
+      font-size: 0.7em; }
     article .container::after {
       content: '';
       width: 0; }
