@@ -18,7 +18,7 @@
 	&, &::before, &::after {
 		transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
 		position: absolute;
-		background: #000;
+		background: white;
 		margin: auto;
 		width: 100%;
 		height: 0.3rem;
@@ -71,7 +71,7 @@
 .mobile {
 	width: 200px;
 	height: 100%;
-	background: pink;
+	background: black;
 	position: fixed;
 	transform: translateX(-250px);
 	transition: transform 0.6s cubic-bezier(.56,.1,.34,.91);

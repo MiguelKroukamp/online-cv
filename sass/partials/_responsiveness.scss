@@ -17,8 +17,9 @@
         display: block;
         ul {
             li {
+                padding-top: 0;
                 a {
-                    font-size: 0.5em;
+                    font-size: 0.4em;
                 }
             }
         }
@@ -193,6 +194,7 @@
         grid-gap: 10px;
         justify-content: space-evenly;
         padding: 30px 0 30px 0;
+        font-size: 0.8em;
         img {
             width: 4em;
             height: auto;
@@ -202,8 +204,17 @@
 
 .footer {
     h3 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     font-size: 0.5em;
+    span {
+        font-size: 1em;
+    }
+    .flex-center .whatsapp {
+        width: 85px;
+    }
+    a {
+        font-size: 1.2em;
+    }
 }
 
