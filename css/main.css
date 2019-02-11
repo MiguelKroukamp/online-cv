@@ -322,6 +322,74 @@ article {
     width: 80px;
     height: auto; }
 
+.menu {
+  display: none;
+  transition: 0.1s transform linear;
+  position: sticky;
+  background: 0;
+  float: none;
+  margin: 2rem;
+  height: 2.7rem;
+  width: 3.5rem;
+  z-index: 1;
+  outline: 0;
+  padding: 0;
+  border: 0;
+  top: 0; }
+
+.bar, .bar::before, .bar::after {
+  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+  position: absolute;
+  background: #000;
+  margin: auto;
+  width: 100%;
+  height: 0.3rem;
+  content: '';
+  top: 50%;
+  left: 0; }
+.bar {
+  margin-top: -0.2rem; }
+.bar::before {
+  top: -1.2rem; }
+.bar::after {
+  top: 1.2rem; }
+.bar::before, .bar::after {
+  transform: rotate(0deg); }
+.active .bar {
+  background: 0; }
+  .active .bar::before {
+    transform: rotate(45deg); }
+  .active .bar::after {
+    transform: rotate(-45deg); }
+  .active .bar::before, .active .bar::after {
+    top: 0; }
+  .active .bar, .active .bar::before, .active .bar::after {
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s; }
+
+.mobile {
+  width: 200px;
+  height: 100%;
+  background: pink;
+  position: fixed;
+  transform: translateX(-250px);
+  transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  padding-top: 3.2rem;
+  display: none; }
+  .menu-open .mobile {
+    transform: translateX(0); }
+  .mobile ul {
+    margin: 0;
+    list-style: none;
+    padding: 0; }
+    .mobile ul li {
+      padding: 20px 5px;
+      font-size: 30px; }
+      .mobile ul li a {
+        text-decoration: none;
+        color: white; }
+      .mobile ul li:hover {
+        background: red; }
+
 @media (max-width: 650px) {
   body {
     margin: 0;
@@ -330,48 +398,20 @@ article {
   .parrallax {
     display: none; }
 
-  nav {
+  .navBar {
     display: flex; }
-    nav ul {
-      text-align: center; }
-    nav li {
-      display: inline-block; }
-    nav a {
-      display: inline-block;
-      padding: 18px 16px; }
-    nav img {
-      position: absolute;
-      height: 100px;
-      width: 100px; }
-    nav #aboutList {
-      position: absolute;
-      display: block;
-      padding: 12px 16px; }
-    nav #about-me:hover #aboutList {
-      display: inline-block; }
 
-  #btn {
+  nav {
     display: none; }
 
-  #btn:hover {
-    border: 3px gray solid; }
-
-  .dropdown {
-    position: relative;
-    display: inline-block; }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1; }
-
-  .dropdown-content a {
-    padding: 12px 16px;
+  .mobile {
     display: block; }
+    .mobile ul li a {
+      font-size: 0.5em; }
 
-  .dropdown:hover .dropdown-content {
-    display: block; }
+  .menu {
+    display: block;
+    font-size: 0.5em; }
 
   header {
     background-size: cover;
@@ -381,7 +421,7 @@ article {
     position: justify;
     text-shadow: 2px 2px 2px black;
     margin: auto;
-    font-size: 1em;
+    font-size: .9em;
     text-align: center; }
     header span {
       display: block;

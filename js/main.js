@@ -14,6 +14,28 @@ document.getElementById("btn").onclick=function changText()
     audio.play();
 }
 
-if($("parallax").css("display") == "none"){
-    $.parallax({...});
-}
+// if($("parallax").css("display") == "none"){
+//     $.parallax({...});
+// }
+
+// if(screen.width < 650) { 
+//     // do any 480 width stuff here, or simply do nothing
+//     ($("parallax").css("display") == "none")
+//     return;
+// } else {
+//     // do all your cool stuff here for larger screens
+// }
+
+var isActive = false;
+
+$('.js-menu').on('click', function() {
+	if (isActive) {
+		$(this).removeClass('active');
+		$('body').removeClass('menu-open');
+	} else {
+		$(this).addClass('active');
+		$('body').addClass('menu-open');
+	}
+
+	isActive = !isActive;
+});
