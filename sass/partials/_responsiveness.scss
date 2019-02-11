@@ -15,9 +15,11 @@
     
     .mobile {
         display: block;
+        height: 40%;
         ul {
             li {
-                padding-top: 0;
+                padding: 0;
+                margin: 0;  
                 a {
                     font-size: 0.4em;
                 }

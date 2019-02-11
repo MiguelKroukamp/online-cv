@@ -405,9 +405,11 @@ article {
     display: none; }
 
   .mobile {
-    display: block; }
+    display: block;
+    height: 40%; }
     .mobile ul li {
-      padding-top: 0; }
+      padding: 0;
+      margin: 0; }
       .mobile ul li a {
         font-size: 0.4em; }
 
